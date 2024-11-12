@@ -1,0 +1,10 @@
+{
+  "name": "Penny-Project-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/Penny-Project-e2e/src",
+  "tags": [],
+  "implicitDependencies": ["Penny-Project"],
+  "// targets": "to see all targets run: nx show project Penny-Project-e2e --web",
+  "targets": {}
+}
