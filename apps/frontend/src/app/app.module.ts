@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { StoreModule } from '@ngrx/store'; // Import StoreModule
 import { AppComponent } from './app.component';
-import { authReducer } from './store/auth.reducer'; // Import your reducer
+import { authReducer } from './store/auth/auth.reducer'; // Import your reducer
 
 @NgModule({
   declarations: [AppComponent],

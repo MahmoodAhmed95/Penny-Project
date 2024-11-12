@@ -15915,6 +15915,16 @@
       },
       {
         "source": "backend",
+        "target": "npm:@nestjs/mongoose",
+        "type": "static"
+      },
+      {
+        "source": "backend",
+        "target": "npm:mongoose",
+        "type": "static"
+      },
+      {
+        "source": "backend",
         "target": "npm:@nestjs/core",
         "type": "static"
       },
