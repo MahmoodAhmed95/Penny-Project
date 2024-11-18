@@ -5389,6 +5389,33 @@
         "hash": "sha512-gIOpjD3Mx8gfYGxYm/RHPcJzqdknNNFCyY+AxzBT3gc5Xvvik1Dn5OxaMGw5EbVfhZgJKVP0n83giUOAlZQe7w=="
       }
     },
+    "npm:@nestjs/config": {
+      "type": "npm",
+      "name": "npm:@nestjs/config",
+      "data": {
+        "version": "3.3.0",
+        "packageName": "@nestjs/config",
+        "hash": "sha512-pdGTp8m9d0ZCrjTpjkUbZx6gyf2IKf+7zlkrPNMsJzYZ4bFRRTpXrnj+556/5uiI6AfL5mMrJc2u7dB6bvM+VA=="
+      }
+    },
+    "npm:dotenv-expand@10.0.0": {
+      "type": "npm",
+      "name": "npm:dotenv-expand@10.0.0",
+      "data": {
+        "version": "10.0.0",
+        "packageName": "dotenv-expand",
+        "hash": "sha512-GopVGCpVS1UKH75VKHGuQFqS1Gusej0z4FyQkPdwjil2gNIv+LNsqBlboOzpJFZKVT95GkCyWJbBSdFEFUWI2A=="
+      }
+    },
+    "npm:dotenv-expand": {
+      "type": "npm",
+      "name": "npm:dotenv-expand",
+      "data": {
+        "version": "11.0.6",
+        "packageName": "dotenv-expand",
+        "hash": "sha512-8NHi73otpWsZGBSZwwknTXS5pqMOrk9+Ssrna8xCaxkzEpU9OTf9R5ArQGVw03//Zmk9MOwLPng9WwndvpAJ5g=="
+      }
+    },
     "npm:@nestjs/core": {
       "type": "npm",
       "name": "npm:@nestjs/core",
@@ -5432,6 +5459,15 @@
         "version": "10.1.0",
         "packageName": "@nestjs/mongoose",
         "hash": "sha512-1ExAnZUfh2QffEaGjqYGgVPy/sYBQCVLCLqVgkcClKx/BCd0QNgND8MB70lwyobp3nm/+nbGQqBpu9F3/hgOCw=="
+      }
+    },
+    "npm:@nestjs/passport": {
+      "type": "npm",
+      "name": "npm:@nestjs/passport",
+      "data": {
+        "version": "10.0.3",
+        "packageName": "@nestjs/passport",
+        "hash": "sha512-znJ9Y4S8ZDVY+j4doWAJ8EuuVO7SkQN3yOBmzxbGaXbvcSwFDAdGJ+OMCg52NdzIO4tQoN4pYKx8W6M0ArfFRQ=="
       }
     },
     "npm:@nestjs/platform-express": {
@@ -9815,15 +9851,6 @@
         "version": "16.4.5",
         "packageName": "dotenv",
         "hash": "sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg=="
-      }
-    },
-    "npm:dotenv-expand": {
-      "type": "npm",
-      "name": "npm:dotenv-expand",
-      "data": {
-        "version": "11.0.6",
-        "packageName": "dotenv-expand",
-        "hash": "sha512-8NHi73otpWsZGBSZwwknTXS5pqMOrk9+Ssrna8xCaxkzEpU9OTf9R5ArQGVw03//Zmk9MOwLPng9WwndvpAJ5g=="
       }
     },
     "npm:duplexer": {
@@ -15888,12 +15915,27 @@
       },
       {
         "source": "frontend",
-        "target": "npm:@ngrx/store",
+        "target": "npm:@angular/forms",
         "type": "static"
       },
       {
         "source": "frontend",
         "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "frontend",
+        "target": "npm:rxjs",
+        "type": "static"
+      },
+      {
+        "source": "frontend",
+        "target": "npm:@ngrx/store",
+        "type": "static"
+      },
+      {
+        "source": "frontend",
+        "target": "npm:@ngrx/effects",
         "type": "static"
       },
       {
@@ -15920,7 +15962,27 @@
       },
       {
         "source": "backend",
+        "target": "npm:@nestjs/jwt",
+        "type": "static"
+      },
+      {
+        "source": "backend",
+        "target": "npm:@nestjs/passport",
+        "type": "static"
+      },
+      {
+        "source": "backend",
         "target": "npm:mongoose",
+        "type": "static"
+      },
+      {
+        "source": "backend",
+        "target": "npm:passport-jwt",
+        "type": "static"
+      },
+      {
+        "source": "backend",
+        "target": "npm:bcrypt",
         "type": "static"
       },
       {
@@ -22625,6 +22687,33 @@
         "type": "static"
       }
     ],
+    "npm:@nestjs/config": [
+      {
+        "source": "npm:@nestjs/config",
+        "target": "npm:@nestjs/common",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nestjs/config",
+        "target": "npm:rxjs",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nestjs/config",
+        "target": "npm:dotenv",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nestjs/config",
+        "target": "npm:dotenv-expand@10.0.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nestjs/config",
+        "target": "npm:lodash",
+        "type": "static"
+      }
+    ],
     "npm:@nestjs/core": [
       {
         "source": "npm:@nestjs/core",
@@ -22713,6 +22802,18 @@
       {
         "source": "npm:@nestjs/mongoose",
         "target": "npm:rxjs",
+        "type": "static"
+      }
+    ],
+    "npm:@nestjs/passport": [
+      {
+        "source": "npm:@nestjs/passport",
+        "target": "npm:@nestjs/common",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nestjs/passport",
+        "target": "npm:passport",
         "type": "static"
       }
     ],

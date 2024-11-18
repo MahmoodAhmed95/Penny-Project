@@ -1,15 +1,22 @@
+// src/app/app.module.ts
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { StoreModule } from '@ngrx/store'; // Import StoreModule
 import { AppComponent } from './app.component';
-import { authReducer } from './store/auth/auth.reducer'; // Import your reducer
+import { SigninComponent } from './signin/signin.component';
+import { SignupComponent } from './signup/signup.component'; // import components
+import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [
+    AppComponent,
+    SigninComponent, // Declare SigninComponent
+    SignupComponent, // Declare SignupComponent
+  ],
   imports: [
     BrowserModule,
-    // Set up NGRX store to manage auth state
-    StoreModule.forRoot({ auth: authReducer }),
+    AppRoutingModule,
+    FormsModule, // Import the routing module
   ],
   providers: [],
   bootstrap: [AppComponent],

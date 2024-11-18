@@ -8,12 +8,11 @@ export const signIn = createAction(
   '[Auth] Sign In',
   props<{ email: string; password: string }>()
 );
-export const signOut = createAction('[Auth] Sign Out');
 export const authSuccess = createAction(
-  '[Auth] Success',
+  '[Auth] Auth Success',
   props<{ token: string }>()
 );
 export const authFailure = createAction(
-  '[Auth] Failure',
+  '[Auth] Auth Failure',
   props<{ error: string }>()
 );
